@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">bookkStore</string>
+    <string name="author">Nhóm 3</string>
+    <string name="email">giap2104@gmail.com</string>
+    <string name="phone">0522490920</string>
+    <string name="app_title">Book Store Online</string>
+    <string name="showallbook">Show All Books</string>
+    <string name="addbook">Add book to store</string>
+    <string name="findbook">Find book by Id</string>
+</resources>
