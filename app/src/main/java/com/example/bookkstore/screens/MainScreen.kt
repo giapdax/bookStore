@@ -4,10 +4,12 @@ import android.accounts.AuthenticatorDescription
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.bookkstore.BottomBarScreen
 
 @Composable
@@ -23,6 +25,17 @@ fun BottomBar(navController: NavHostController) {
         BottomBarScreen.AddBook,
         BottomBarScreen.Find
     )
+    // biến nhớ vị trí của navigation
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    // biến ghi nhớ vị trí hiện ytaji của navigation
+    val currentDestination = navBackStackEntry?.destination
+    // duyệt danh sách các item đẻ vẽ
+    BottomNavigation {
+        screens.forEach {
+            scr ->
+        }
+
+    }
 
 }
 
